@@ -1,0 +1,136 @@
+body {
+    margin: 50px;
+    width: 620px;
+    height: 670px;
+    color: #FFFF;
+    background-color: #1F2937;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #273549;
+    padding: 50px 40px;
+    height: 90%;
+}
+
+
+h1 span {
+    color: #F59E0B;
+}
+
+p {
+    color: #D5D4D8;
+    font-family: "Inter", sans-serif;
+}
+
+.controls {
+    padding: 20px 1px;
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+input {
+    margin: 15px 0%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    border-radius: 6px;
+    margin: 30px 0%;
+    padding: 15px;
+    color: #FFFF;
+    background-color: #F59E0B;
+    border: none;
+}
+
+.switch {
+    
+  margin: 15px 0%;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 10px
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.password {
+    background: #2F3E53;
+    border-radius: 10px;
+    margin: 10px 10px;
+    height: 40px;
+    width: 200px;
+    padding: 2px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#password-1, #password-2 {
+    color: #F59E0B;
+}
+
+.password-container {
+    border-top:2px solid #2F3E53;
+    margin: 10px;
+    display: flex;
+    padding: 20px 0;
+}
